@@ -133,7 +133,7 @@ export function RouteMap({ route }: RouteMapProps) {
         }
 
         // Fit map to bounds
-        if (!bounds.isEmpty()) {
+        if (bounds.isValid()) {
             map.fitBounds(bounds, { padding: [50, 50] });
         }
 

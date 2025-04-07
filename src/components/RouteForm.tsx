@@ -50,9 +50,8 @@ export function RouteForm({ onSubmit, isLoading }: RouteFormProps) {
             <CardFooter>
                 <Button
                     onClick={handleSubmit}
-                    className="w-full"
                     disabled={!origin || !destination || isLoading}
-                    variant="ios"
+                    className="w-full bg-ios-blue hover:bg-ios-blue/90"
                 >
                     {isLoading ? 'Gerando rota...' : 'Gerar Rota'}
                 </Button>
